@@ -1,0 +1,32 @@
+.axis-label {
+    text-anchor: middle;
+    font-size: 12px;
+    font-weight: semibold;
+}
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+}
+
+#main {
+    margin: 20px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: gray;
+    pointer-events: none; /* Ensures tooltip does not block mouse events */
+
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    opacity: 0; /* Start with 0 opacity, will be transitioned */
+    transition: opacity 0.2s ease-in-out; /* Add a smooth transition effect */
+    pointer-events: none; /* Ensure the tooltip doesn't interfere with mouse events on the circles */
+}
+
+.tooltip strong {
+    display: block; /* Add some spacing between the strong text and other content */
+    margin-bottom: 4px;
+}
